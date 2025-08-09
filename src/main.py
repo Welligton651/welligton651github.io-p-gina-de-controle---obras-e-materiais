@@ -11,7 +11,7 @@ from src.routes.obra import obra_bp
 from src.routes.produto import produto_bp
 from src.routes.sistema import sistema_bp
 
-app = Flask(__name__, static_folder=os.path.join(os.path.dirname(__file__), \'static\'))
+app = Flask(__name__, static_folder=os.path.join(os.path.dirname(__file__), 'static'))
 app.config[\'SECRET_KEY\'] = \'asdf#FGSgvasgf$5$WGT\'
 
 # Registrar blueprints
