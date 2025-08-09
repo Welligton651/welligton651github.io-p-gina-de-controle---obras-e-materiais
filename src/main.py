@@ -12,7 +12,7 @@ from src.routes.produto import produto_bp
 from src.routes.sistema import sistema_bp
 
 app = Flask(__name__, static_folder=os.path.join(os.path.dirname(__file__), 'static'))
-app.config['SECRET_KEY'] = \'asdf#FGSgvasgf$5$WGT\'
+app.config['SECRET_KEY'] = 'asdf#FGSgvasgf$5$WGT'
 
 # Registrar blueprints
 app.register_blueprint(user_bp, url_prefix=\'/api\')
